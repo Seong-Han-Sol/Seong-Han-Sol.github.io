@@ -30,4 +30,4 @@
 - URL경로(path):/루트, /test/html5.html
 - 로렘 입숨 한글 URL :http://guny.kr/stuff/klorem/#/table-html
 - 로렘 입숨 영어 URL :https://loremipsum.io/generator/?n=1&t=p
-- submit= 전송(서밋)  
+- submit= 전송(서밋)  / 데이터 한개 입력이 끝나면 반드시 ;으로 마무리
