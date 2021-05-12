@@ -31,3 +31,8 @@
 - 로렘 입숨 한글 URL :http://guny.kr/stuff/klorem/#/table-html
 - 로렘 입숨 영어 URL :https://loremipsum.io/generator/?n=1&t=p
 - submit= 전송(서밋)  / 데이터 한개 입력이 끝나면 반드시 ;으로 마무리
+#### 20210512(수) 작업내역
+-git colne으로 작업물 복사한 경우 concinfig --list 확인에서 유저네임, 이메일 없으면 아래에 추가하기
+- git config --local user.name 이름
+- git config --local user.email 이메일
+프로젝트를 1명이서 제작하는 경우는 없기 때문에, 2명일때 소스수정한 사람 확인용 정보입니다.
