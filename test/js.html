@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 실습</title>
+    <!-- 자바스크립트: JS, jQuery, Es5~7(엑마스크립트) -->
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{ width: 25%;}
+    </style>
+</head>
+<body>
+    <table id="board">
+        <tr>
+            <th>id</th>
+            <th>age</th>
+            <th>eyeColor</th>
+            <th>name</th>
+            <tbody></tbody>
+        </tr>
+    </table>
+    <div id="one">헬로우 자바스크립트</div>
+    <script>
+        /* 여러줄 주석
+         자바스크립트부터는 프로그램이기 때문에 디버그용어 사용(에러처리)
+         자바언어부터 개발되었고, 자바스크립트와는 관계가 없음
+         자바스크립트는 인터프리터언어(1줄씩 위에서 아래로 해석) =파이썬
+         자바는 컴파일언어(클래스 단위로 해석)
+        */
+        //한줄 주석사용, 개체(태그) 선택방법, 디버그방법
+        document.getElementById('one').innerHTML = "헬로 <h1>javascript</h2>";
+        document.getElementById('one').innerText = "헬로 <h1>javascript</h2>";
+            var debug = document.getElementById('one')
+        // window.alert(debug.innerText); //디버그 하는 방법1
+        console.log(debug); //디버그하는 방법2 json 빅 데이터확인
+        // 예전 자바스크립트를 배우는 이유는 IOT때문에 배운다.
+        // IoT 임베디드프로그램에서는 jQuery를 사용못하는 경우가 있음
+        // 위 경우 네이티브 자바스크립트를 사용하게 된다.
+    </script>
+    </body>
+</html>
