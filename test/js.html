@@ -27,6 +27,75 @@
     </table>
     <div id="one">헬로우 자바스크립트</div>
     <script>
+        var arrays = [10, 20, 30, 40, 50];
+        // 반복문2 : while 문은 for문보다는 조금 사용, 잘못하면 무한반복 되기 때문
+        // while문: 주로 IoT에서 많이 사용합니다. 온도센서 값 입력할때 무한반복되야하기 때문
+        var i=0;
+        while (i < arrays.length) {
+            document.write(arrays[i]);
+            document.write('<br>');
+            i=i+1;// i++
+        }
+        document.write('<hr>');
+        // 반복문1 : for문 ~하는 동안 반복해라.
+
+        //for(시작값; 종료값; 증가값) {}
+        //i--; i=i-1;
+        //i++; i=i+1;
+    //   for(var i=(arrays.length-1); i>=0; i--) { //내림차순 출력
+        for(var i=0; i<arrays.length; i++) {//오름차순 출력}
+          document.write(arrays[i]);
+          document.write('<br>');
+      }
+      document.write('<hr>');
+        // 조건문 : 비교
+      if (1>3) {
+          document.write('if문 시작');
+      } else if(2 == 3) {
+          document.write('else if 첫번째');
+      } else if ('a' == 'a') {
+          document.write('else if 두번째');
+      } else {
+          document.write('else 문')
+        }
+        document.write('<br>');
+        document.write('<hr>');
+        //선택문 : Swich case 스위치 케이스문
+        var key = 3;
+        switch (key) {
+            case 1:
+                document.write(key,'를 선택했습니다.');
+                break;//switch문 빠져나갑니다(중지)
+            case 2:
+                document.write(key,'를 선택했습니다.');
+                break;
+            case 3:
+                document.write(key,'를 선택했습니다.');
+                break;
+            default:
+                document.write('선택된 키가 없습니다.')
+                break;
+            }
+        document.write('<hr>');
+        //인터넷 자료교환 대량 데이터형식: xml 태그 데이터 방식
+        //지금은 json(javascript Object Notation) 자바스크립트 객체 표시
+        //복잡해 보이지만 key:value(고유키:값)
+        var human = {
+            name:{
+                firstname:'성',
+                lastname:'한솔'
+            },            //object(배열)형
+            age:10,       //number형
+            married:false //boolean형
+        }
+        document.write(typeof(human));
+        document.write('<br>');
+        document.write(human['name']);
+        document.write('<br>');
+        document.write(human['name']['lastname']);
+        document.write('<br>');
+        document.write(human['age']); //값을 파싱할때, 키로 값을 뽑아낸다.
+        document.write('<hr>');
         //사용자 데이터형: odject(array)
         //참고: 기본형 데이터: number, string, boolean
         var arrays = [10, 20, 30, 40];
@@ -39,10 +108,12 @@
         document.write(arrays); //pop 이전의 배열값
         document.write('<br>')
         document.write(arrays.pop()); //arrays에서 자료를 뽑아냄(내용삭제)
+        //pop 제일 마지막에 입력된==index가 제일 마지막인 값을 삭제
         document.write('<br>')
         document.write(arrays); //pop 이후의 배열값
         document.write('<br>')
         document.write(arrays.push(1000)); //arrays에 자료 입력(내용추가)
+        //push 인덱스 값이 제일 마지막인 자료 다음에 입력이 된다.
         document.write('<br>')
         document.write(arrays);
         document.write('<br>')
@@ -50,7 +121,13 @@
         document.write('<br>')
         document.write(arrays);
         document.write('<br>')
+        document.write(arrays.sort()); //오름차순 1,2,3
         document.write('<br>')
+        document.write(arrays.reverse()); //내림차순 3,2,1
+        document.write('<br>')
+        document.write(arrays.sort(function(a,b){return b-a}))
+        //오름차순을 sort함수로 구현하기(아래)
+        document.write('<hr>');
         //날짜 처리 함수
         var date = new Date; //new키워드(예약어)로 함수형 변수 생성
         var date2 = new Date; //웹브라우저의 pc 시간이 저장된다
