@@ -7,11 +7,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- 제이쿼리 코어 임포트 가져오기(아래) -->
 <script src="/home/js/jquery-3.6.0.js"></script>
-<!-- 상단 바로가기 링크시 부드럽게 상단으로 이동하는 js임포트(아래) -->
+<!-- 상단바로가기 클릭시 부드럽게 이동하는 외부 라이브러리 JS 임포트(아래) -->
 <script src="/home/js/jquery.smooth-scroll.min.js"></script>
-<!-- 화면을 초기화 시키는 reset 스타일 임포트 :크로스브라이징을 처리하기 위해서 -->
-<!-- 크롬, IE, 엣지, 사파리, 파이어폭스에서 h1, p, ul, div 태그의 크기가 조금씩 다름 -->
-<!-- 작업한 결과가 모든 브라우저(크로싱브라우저)에 똑같이 보이게 하기 위한 절차가 reset.css(아래) -->
+<!-- 화면을 초기화 시키는 reset 스타일 임포트:크로스브라이징 처리하기위해서 -->
+<!-- 크롬, IE, 엣지, 사파리, 파이어폭스 h1, p, ul, div 태그의 크기가 조금씩 틀림니다. -->
+<!-- 작업한 결과가 모든 브라우져(크로싱브라우징)에 똑같이 보이게 하기 위한 reset.css(아래) -->
 <link rel="stylesheet" href="/home/css/reset.css">
 <link rel="stylesheet" href="/home/css/mobile.css">
 <style>
@@ -38,11 +38,11 @@
 	width: 100%;
 }
 ul.viewImgList li {
-	/* ul.클래스명 : ul태그중 클래스명이 viewImgList인 영역  */
+	/* ul.클래스명: ul태그중 클래스명이 viewImgList 영역 */
 	text-align: center;
 	height: 300px;
 	line-height: 550px;
-	background-size: cover; /*배경 이미지의 크기를 꽉 채우는 값 */
+	background-size: cover;/* 배경 이미지의 크기를 꽉 채우는 값 cover */
 	width: 100%;
 }
 .roll_content a img {
@@ -56,15 +56,13 @@ li.imglist0 {
 li.imglist1 {
 	position: absolute;
 	z-index: 10;
-	left: 0;
-	top: 0;
+	left:0; top:0;
 	background: url(./img/slide1.jpg) no-repeat;
 }
 li.imglist2 {
 	position: absolute;
 	z-index: 10;
-	left: 0;
-	top: 0;
+	left:0; top:0;
 	background: url(./img/slide1.jpg) no-repeat;
 }
 .roll_content {
@@ -72,8 +70,8 @@ li.imglist2 {
 }
 .roll_content .roll_txtline {
 	position: absolute;
-	left: 0;
-	bottom: 60; /*roll_content하단에서 60px 위에 위치*/
+	left:0;
+	bottom: 60px;/* roll_content하단에서 60px 위에 위치 */
 	width: 100%;
 	line-height: 1;
 	text-align: center;
@@ -109,7 +107,67 @@ li.imglist2 {
 	font-size: 20px;
 	padding: 27px 0 25px; /*27 상하, 0 좌, 25우*/
 }
+.about_area h2 b {
+	display: block;
+	padding-top: 10px;
+}
+.about_box {background: #fff;}
+.place_list li {
+	float:none;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	padding:0 20px;
+}
+.place_list li img {
+	width: 100%; /*가로크기 반응형으로 만드는 방법 크기를 ~%표시*/
+}
+.place_list li h3 {
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 25px;
+}
+.place_list p.txt {
+	padding: 10px 50px 30px;
+	line-height: 1.4;
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	word-break: keep-all;
+	color: #666;
+}
+.place_list li .view {
+	padding-bottom: 10px;
+	max-width: 0 0 30px;
+	display: inline-block;
+	padding-top: 5px;
+	border-top: 2px solid #333;
+	color: #666;
+}
 /* //갤러리 최근 게시물 영역 */
+/* 공지사항 최근 게시물 영역 */
+.app_line {display: none;} 앱_라인은 태블릿, pc전용 콘텐츠입니다.
+.appbbs_area {
+	padding: 0 20px;
+	text-align: left;
+}
+.bbs_line {
+	float: none;
+	width: 100%;
+	padding: 20px 0;
+	border-top: 1px solid #d6d7d8;
+}
+.bbs_line h3 {
+	font-weight: bold;
+	font-size: 19px;
+}
+.bbs_line .notice_recent {
+	padding-top: 10px;
+}
+.bbs_line .notice_recent li {
+	padding: 8px, 0;
+}
+/* //공지사항 최근 게시물 영역 */
 /* //본문컨테이너영역 */
 </style>
 <script>
@@ -158,7 +216,7 @@ $(document).ready(function() {
 				        <div class="gnb_depth gnb_depth2_2">
                             <ul class="submenu_list">
                                 <li><a href="board_list.html">공지사항</a></li>
-                                <li><a href="board_list.html">겔러리게시판</a></li>
+                                <li><a href="board_list.html">갤러리게시판</a></li>
                             </ul>
                         </div>
 					</li>
@@ -218,7 +276,7 @@ $(document).ready(function() {
 	
 		<!-- 갤러리최근게시물영역 -->
 		<div class="about_area">
-			<h2>겔러리 최근 게시물 <b>TOP 3</b></h2>
+			<h2>갤러리 최근 게시물 <b>TOP 3</b></h2>
 			<div class="about_box">
 				<ul class="place_list box_inner clear">
 					<li><a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.contact_pop').show();">
