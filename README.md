@@ -37,6 +37,10 @@
 - git config --local user.email 이메일
 프로젝트를 1명이서 제작하는 경우는 없기 때문에, 2명일때 소스 수정한 사람 확인용 정보입니다.
 #### 20210513(목) 작업내역
+- 픽사베이 이미지 3개: 로고1, 슬라이드 이미지1, NoImage1 받고, 경로 적어놓기
+- 로그 이미지 경로 : https://pixabay.com/images/id-6029680/
+- 슬라이드 이미지 : https://pixabay.com/ko/photos/%EC%83%88%EB%81%BC-%EA%B3%A0%EC%96%91%EC%9D%B4-%EB%8F%99%EB%AC%BC-%EA%B3%A0%EC%96%91%EC%9D%B4-3669244/
+- no_img : https://pixabay.com/ko/vectors/%EB%B9%BC%EA%B8%B0-%EC%A0%9C%EA%B1%B0-%EC%82%AD%EC%A0%9C-%EC%B7%A8%EC%86%8C-38749/
 - 작업폴더를 나누는 이유 : 시청(관공서), 대학, 기업의 웹프로그램(or사이트)를 제작할 때, 1년간 무상 유지보수 이후 2천, 리뉴얼 4천 비용이 책정
 - home폴더에 기존작업물, 리뉴얼 작업물은 home에 덮어쓰는 방식이 아님
 - 리뉴얼 할때 home2022(년도) 폴더에 작업을 하게 된다.
