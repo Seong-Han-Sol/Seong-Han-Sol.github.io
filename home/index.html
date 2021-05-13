@@ -17,8 +17,12 @@
 <style>
 /* 모바일용 메인페이지 스타일 지정(아래) */
 /* 공통영역 */
-body {
+body { /*body태그는 적용되지만 body안의 a태그엔 적용되지X*/
     font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px !important; /*important 중요함(다른 것들은 무시하고 붙여놓은 것만 고정되어적용), body 폰트크기는 무조건 고정*/
+    letter-spacing: -1px !important;
+    color: #444 !important;
+    word-wrap: break-word !important;
 }
 </style>
 <script>
