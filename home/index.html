@@ -43,6 +43,7 @@ ul.viewImgList li {
 	height: 300px;
 	line-height: 550px;
 	background-size: cover; /*배경 이미지의 크기를 꽉 채우는 값 */
+	width: 100%;
 }
 .roll_content a img {
 	display: none;
@@ -103,6 +104,12 @@ li.imglist2 {
 	vertical-align: top; /*img하고 다른 태그 사용시 다른 태그의 세로 정렬*/
 }
 /* //슬라이드영역 */
+/* 갤러리 최근 게시물 영역 */
+.about_area h2 {
+	font-size: 20px;
+	padding: 27px 0 25px; /*27 상하, 0 좌, 25우*/
+}
+/* //갤러리 최근 게시물 영역 */
 /* //본문컨테이너영역 */
 </style>
 <script>
@@ -197,11 +204,11 @@ $(document).ready(function() {
                 <!-- 슬라이드버튼영역 -->
                 <div class="rollbtnArea">
                     <ul class="rollingbtn">
-                        <li class="seq butt0"><a href="#butt"><img src="img/btn_rollbutt_on.png" alt="1번" /></a></li>
-                        <li class="seq butt1"><a href="#butt"><img src="img/btn_rollbutt_off.png" alt="2번" /></a></li>
-                        <li class="seq butt2"><a href="#butt"><img src="img/btn_rollbutt_off.png" alt="3번" /></a></li>
-                        <li class="rollstop"><a href="#" class="stop"><img src="img/btn_roll_stop.png" alt="멈춤" /></a></li>
-                        <li class="rollplay"><a href="#" class="play"><img src="img/btn_roll_play.png" alt="재생" /></a></li>
+                        <li class="seq butt0"><a href="#butt"><img src="./img/btn_rollbutt_on.png" alt="1번" /></a></li>
+                        <li class="seq butt1"><a href="#butt"><img src="./img/btn_rollbutt_off.png" alt="2번" /></a></li>
+                        <li class="seq butt2"><a href="#butt"><img src="./img/btn_rollbutt_off.png" alt="3번" /></a></li>
+                        <li class="rollstop"><a href="#" class="stop"><img src="./img/btn_roll_stop.png" alt="멈춤" /></a></li>
+                        <li class="rollplay"><a href="#" class="play"><img src="./img/btn_roll_play.png" alt="재생" /></a></li>
                     </ul>
                 </div>
                 <!-- //슬라이드버튼영역 -->
