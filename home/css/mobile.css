@@ -387,7 +387,7 @@ footer {
 	color: #767676;
 }
 .snslink {
-	position: static; /* 다른 대그를 기준으로 static 고정값, relative 상대값 */
+	position: static; /* 다른 태그를 기준으로 static 고정값, relative 상대값 */
 	width: 210px;
 	margin: 10px auto; /* 10 상하여백, auto 좌우=가운데정렬 */
 }
@@ -419,7 +419,7 @@ footer {
 	bottom: 100px;
 	text-align: center;
 	background: none;
-	z-index: 100; /*슬라이드 이미지 200 보다는 아래이기 때문에 겹치면 않보임*/
+	z-index: 100; /*슬라이드 이미지 200 보다는 아래이기 때문에 겹치면 안보임*/
 }
 .to_top a {
 	display: block;
