@@ -14,7 +14,27 @@
         }
         th{ width: 25%;}
     </style>
+    <!-- 제이쿼리 코어 임포트 불러오기 -->
  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+ <script src="./json.js"></script>
+<script>
+    // 외부 js파일의 json데이터를 body태그안의 #board내부에 파싱
+    console.log(jsonData);
+    // jsonData를 파싱해서 #board 영역에 동적으로 출력
+    $(document).ready(function(){
+        for(var i=0;i<jsonData.length;i++) {
+            // jsinData를 1개씩 뽑아서 화면에 table>tr>td에 출력하게 합니다
+            // append는 가상선택자의 after 기준영역의 다음을 말합니다.
+            $('#board tbody').append('<tr>');
+            $('#board tbody').append('<td style="text-align:center;">'+i+'</td>');
+            $('#board tbody').append('<td>'+jsonData[i]['_id']+'</td>');
+            $('#board tbody').append('<td>'+jsonData[i]['age']+'</td>');
+            $('#board tbody').append('<td>'+jsonData[i]['eyeColor']+'</td>');
+            $('#board tbody').append('<td>'+jsonData[i]['name']+'</td>');
+            $('#board tbody').append('</tr>');
+        }
+    });
+</script>
 <script>
      //jQuery로 개발자가 프로그램을 간편하게 만들기
         //jQuery CDN : Contents Delivery Network 인터넷으로 외부 프로그램을 가져다 사용.
@@ -33,6 +53,7 @@
 <body>
     <table id="board">
         <tr>
+            <th>No</th>
             <th>id</th>
             <th>age</th>
             <th>eyeColor</th>
