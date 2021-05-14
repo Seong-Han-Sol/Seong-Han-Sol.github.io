@@ -306,7 +306,7 @@ li.imglist2 {
 }
 .place_list li .view {
 	padding-bottom: 10px;
-	max-width: 0 0 30px;
+	margin: 0 0 30px;
 	display: inline-block;
 	padding-top: 5px;
 	border-top: 2px solid #333;
@@ -334,7 +334,7 @@ li.imglist2 {
 	padding-top: 10px;
 }
 .bbs_line .notice_recent li {
-	padding: 8px, 0;
+	padding: 8px 0;
 }
 /* //공지사항 최근 게시물 영역 */
 /* //본문컨테이너영역 */
