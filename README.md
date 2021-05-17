@@ -61,7 +61,15 @@
 - 메인페이지에 자바스크립트 (jQuery)적용. (VS code+HTML5+CSS+jQuery)
 - 제이쿼리 적용부분 : 메뉴, 슬라이드이미지 3개처리. :모바일페이지만 마무리
 - 보통 이미지 슬라이드 처리는 외부 라이브러리 (Lib) 사용(니보슬라이드, 캐로셀슬라이드)
-- 외부 Lib사용 안하고 우리가 직접 만들어보기
+- 외부 Lib사용 안하고 우리가 직접 만들어보기 ok
+- jQuery 제이쿼리 JSON데이터 파싱
+- 외부 date.js 파일에서 json데이터를 저장한 후 html에 불러와서 파싱
+- 외부 사이트에서 제공하는 (RestAPI 서버) json데이터를 html에서 불러와 파싱.
+- RestAPI서버 중 코로나19 확진자 데이터를 받아서 html에서 파싱(데이터를 분해해서 화면에 뿌려주는 작업)
+- ReatAPI서버주소(빅데이터) :  https://coroname.me/getdata
+- 슬라이드2 이미지 :https://pixabay.com/ko/photos/%EA%B3%A0%EC%96%91%EC%9D%B4-%EA%B2%80%EC%9D%80-%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%95%A0%EC%99%84-%EB%8F%99%EB%AC%BC-4541889/
+- 슬라이드3 이미지 : https://pixabay.com/ko/photos/%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%83%88%EB%81%BC-%EA%B3%A0%EC%96%91%EC%9D%B4-%ED%8A%B8%EB%A6%AC-1647775/
+#### 작업예정.
 - 태블릿 메인 CSS 스타일처리, pc용 메인 CSS 스타일처리
 - 모바일 서브페이지 CSS 스타일 처리
 - 태블릿+PC용 CSS스타일 처리
@@ -71,10 +79,3 @@
 - UI디자인 끝 ---------------------------------------
 - UI구현 시작 ----------------- 스프링프로젝트 시작(이클립스+자바+오라클+스프링)
 - UI구현 ......위 에서 제작한 UI디자인 이용해서 프로그램을 입히게 됩니다.
-- jQuery 제이쿼리 JSON데이터 파싱
-- 외부 date.js 파일에서 json데이터를 저장한 후 html에 불러와서 파싱
-- 외부 사이트에서 제공하는 (RestAPI 서버) json데이터를 html에서 불러와 파싱.
-- RestAPI서버 중 코로나19 확진자 데이터를 받아서 html에서 파싱(데이터를 분해해서 화면에 뿌려주는 작업)
-- ReatAPI서버주소(빅데이터) :  https://coroname.me/getdata
-- 슬라이드2 이미지 :https://pixabay.com/ko/photos/%EA%B3%A0%EC%96%91%EC%9D%B4-%EA%B2%80%EC%9D%80-%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%95%A0%EC%99%84-%EB%8F%99%EB%AC%BC-4541889/
-- 슬라이드3 이미지 : https://pixabay.com/ko/photos/%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%83%88%EB%81%BC-%EA%B3%A0%EC%96%91%EC%9D%B4-%ED%8A%B8%EB%A6%AC-1647775/
