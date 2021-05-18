@@ -70,7 +70,10 @@
 - 슬라이드2 이미지 :https://pixabay.com/ko/photos/%EA%B3%A0%EC%96%91%EC%9D%B4-%EA%B2%80%EC%9D%80-%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%95%A0%EC%99%84-%EB%8F%99%EB%AC%BC-4541889/
 - 슬라이드3 이미지 : https://pixabay.com/ko/photos/%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%83%88%EB%81%BC-%EA%B3%A0%EC%96%91%EC%9D%B4-%ED%8A%B8%EB%A6%AC-1647775/
 #### 작업예정.
-- 태블릿 메인 CSS 스타일처리, pc용 메인 CSS 스타일처리
+- 태블릿 메인 CSS 스타일처리, pc용 메인 CSS 스타일처리(반응형으로 제작)
+- 반응형 페이지의 핵심기술은 미디어쿼리 명령어 사용, 가로크기를 % (px고정 크기가 아닌 비율로 내부 컨텐츠 크기를 지정하는 방법)
+- 미디어(PC화면, 스마트폰 화면, 프린터, 태블릿화면)+쿼리(질의어-질문)
+- @media 미디어타입(screen, print 등등 -all) and (min-width: 801px) {스타일 구현내용}
 - 모바일 서브페이지 CSS 스타일 처리
 - 태블릿+PC용 CSS스타일 처리
 - 모바일 게시판 페이지(CRUD) CSS처리

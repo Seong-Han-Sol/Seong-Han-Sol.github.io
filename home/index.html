@@ -10,7 +10,7 @@
 <!-- 상단바로가기 클릭시 부드럽게 이동하는 외부 라이브러리 JS 임포트(아래) -->
 <script src="/home/js/jquery.smooth-scroll.min.js"></script>
 <!-- 화면을 초기화 시키는 reset 스타일 임포트:크로스브라이징 처리하기위해서 -->
-<!-- 크롬, IE, 엣지, 사파리, 파이어폭스 h1, p, ul, div 태그의 크기가 조금씩 틀림니다. -->
+<!-- 크롬, IE, 엣지, 사파리, 파이어폭스 h1, p, ul, div 태그의 크기가 조금씩 틀립니다. -->
 <!-- 작업한 결과가 모든 브라우져(크로싱브라우징)에 똑같이 보이게 하기 위한 reset.css(아래) -->
 <link rel="stylesheet" href="/home/css/reset.css">
 <!-- 여기서 부터 사용자 정의형 스타일 + 스크립트 추가(아래) -->
@@ -19,8 +19,32 @@
 <!-- 메인슬라이드 코어 임포트 -->
 <script src="/home/js/slidemain.js"></script>
 <style>
-/* 테블릿용 메인페이지 스타일 지정(아래) */
+/* 테블릿용 메인페이지 스타일 지정(아래)  https://github.com/kimilguk/kimilguk.github.io/blob/master/home/css/tablet.css */
+@media all and (min-width:801px) {
+	/* 상단로고와 메뉴스타일 */
+	header {
+		height: 113px;
+	}
+	.header_area h1 {
+		float: left; /*로고 이미지를 가운데에서 -> 왼쪽으로 정렬*/
+		padding: 15px 0px 0px;
+		padding-left: 20px;
+		width: auto;
+		height: inherit; /*상속 : 현재 영역의 부모의 높이를 그대로 사용하겠다는 명시*/
+		text-align: inherit;
+	}
+	.header_area h1 a {
+		display: block;
+		width: 100px;
+		height: 80px;
+		background-size: 70px 80px !important;
+	}
+	.openMOgnb {
+		display: none;
+	}
 
+	/* //상단로고와 메뉴스타일 */
+}
 </style>
 <script>
 // 메인페이지 전용 슬라이드 호출 부분
