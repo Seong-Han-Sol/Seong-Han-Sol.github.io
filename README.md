@@ -8,7 +8,10 @@
 - 메인페이지 시간이 걸리는 부분(프런트엔드): 메뉴처리, 슬라이딩처리OK.
 - 모바일 게시판페이지(CRUD) CSS 처리
 - 카멜표기법(낙타등표기법 예, bbsListTbl), _표기법 예, bbs_title
-- href : hypertext referance
+- href(헤르프) : hypertext referance
+- 정적 (static) 콘텐츠 : heml, css, js
+- 동적 (dynamic) 콘텐츠 : jsp(java스프링), PHP, C#(.net), Nodejs(익스프레스)
+- 오후에 자바(스프링) 개발환경 설치예정. (이클립스:전자정부표준프레임워크의 개발환경을 설치)
 - 모바일 서브페이지 CSS 스타일처리
 - 테블릿+PC용 CSS 스타일처리
 - 테블릿+PC용 CSS 스타일처리
