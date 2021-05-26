@@ -24,6 +24,9 @@
 <script src="/home/js/main.js"></script>
 <!-- 메인슬라이드 코어 임포트 -->
 <script src="/home/js/slidemain.js"></script>
+<!-- html5가 아닌 JS로 유효성 검사 코어2개 임포트 -->
+<script src="/home/js/jquery.validate.js"></script>
+<script src="/home/js/additional-methods.js"></script>
 <style>
 /* 모바일용 로그인 스타일 */
 
@@ -121,7 +124,7 @@ $(document).ready(function() {
 				<ul class="app_list">
 					<li class="clear">
 						<label for="email_lbl" class="tit_lbl pilsoo_item">이메일</label>
-						<div class="app_content"><input type="email" name="email"" class="w100p" id="email_lbl" placeholder="이메일을 입력해주세요" required/></div>
+						<div class="app_content"><input type="email" name="email" class="w100p" id="email_lbl" placeholder="이메일을 입력해주세요" required/></div>
 					</li>
 					<li class="clear">
 						<label for="name_lbl" class="tit_lbl pilsoo_item">작성자명</label>
@@ -154,7 +157,7 @@ $(document).ready(function() {
 					</li>
 					<li class="clear">
 						<label for="agree_lbl" class="tit_lbl pilsoo_item">개인정보활용동의</label>
-						<div class="app_content checkbox_area"><input type="checkbox"" name="agree" class="css-checkbox" id="agree_lbl" required checked/>
+						<div class="app_content checkbox_area"><input type="checkbox" name="agree" class="css-checkbox" id="agree_lbl" required checked/>
 						<label for="agree_lbl" class="agree">동의함</label>
 						</div>
 					</li>
