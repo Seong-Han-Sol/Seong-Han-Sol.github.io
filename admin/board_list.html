@@ -137,7 +137,6 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -167,20 +166,28 @@
             <h3 class="card-title">Responsive Hover Table</h3>
 
             <div class="card-tools">
-              <div class="input-group input-group-sm" style="width: 150px;">
-                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                <div class="input-group-append">
+              <!-- 내용 검색 폼 -->
+              <div class="input-group input-group-md">
+               <form name="form_search" action="board_list.html" method="GET" class="form-horizontal">
+                <div class="input-group-append float-right" style="width: inherit;">
                   <button type="submit" class="btn btn-default">
-                    <i class="fas fa-search"></i>
+                    <i class="fas" fa-search"></i>
                   </button>
                 </div>
+                <input type="text" name="table_search" class="form-control float-right" placeholder="Search" style="width: inherit;">
+                <select class="form-control float-right" style="width: inherit;">
+                  <option>전체</option>
+                  <option>제목</option>
+                  <option>내용</option>
+                </select>
+              </form>
               </div>
+              <!-- //내용 검색 폼 -->
             </div>
           </div>
           <!-- /.card-header -->
           <div class="card-body table-responsive p-0">
-            <table class="table table-hover text-nowrap">
+            <table class="table table-hover"> <!--text-nowrap = 줄바꿈을 하지 않겠다는 표시 이게 들어가면 화면 크기에 따라 스크롤이 생겨버림(반응형x)-->
               <thead>
                 <tr>
                   <th>ID</th>
@@ -289,8 +296,6 @@
 </script>
 <!-- Bootstrap 4 부트스트랩4 코어 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Tempusdominus Bootstrap 4 댓글스타일에 필요 -->
-<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote 섬머노트웹에디터 코어 -->
 <script src="plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars 왼쪽스크롤메뉴 코어 -->
