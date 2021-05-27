@@ -61,7 +61,7 @@
       <!-- Sidebar user panel (optional) 로그인한 정보 -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user3-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="dist/img/avatar3.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">로그인한 ID</a>
@@ -137,6 +137,7 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -144,12 +145,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">{게시판변수명} 게시판리스트</h1>
+            <h1 class="m-0">{게시판변수명} 리스트</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">{게시판변수명} v1</li>
+              <li class="breadcrumb-item active">{게시판변수명}</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -163,31 +164,32 @@
         <!-- 콘텐츠 내용 -->
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Responsive Hover Table</h3>
+            <h3 class="card-title">목록</h3>
 
             <div class="card-tools">
-              <!-- 내용 검색 폼 -->
+              <!-- 내용검색 폼 -->
               <div class="input-group input-group-md">
-               <form name="form_search" action="board_list.html" method="GET" class="form-horizontal">
-                <div class="input-group-append float-right" style="width: inherit;">
-                  <button type="submit" class="btn btn-default">
-                    <i class="fas" fa-search"></i>
-                  </button>
-                </div>
-                <input type="text" name="table_search" class="form-control float-right" placeholder="Search" style="width: inherit;">
-                <select class="form-control float-right" style="width: inherit;">
-                  <option>전체</option>
-                  <option>제목</option>
-                  <option>내용</option>
-                </select>
-              </form>
+                <form name="form_search" action="board_list.html" method="GET" class="form-horizontal">
+                  <div class="input-group-append float-right" style="width: inherit;">
+                      <button type="submit" class="btn btn-default">
+                        <i class="fas fa-search"></i>
+                      </button>
+                  </div>
+                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search" style="width: inherit;">
+                  <select class="form-control float-right" style="width: inherit;">
+                    <option>전체</option>
+                    <option>제목</option>
+                    <option>내용</option>
+                  </select>                
+                </form>
               </div>
-              <!-- //내용 검색 폼 -->
+              <!-- //내용검색 폼 -->
             </div>
           </div>
           <!-- /.card-header -->
           <div class="card-body table-responsive p-0">
-            <table class="table table-hover"> <!--text-nowrap = 줄바꿈을 하지 않겠다는 표시 이게 들어가면 화면 크기에 따라 스크롤이 생겨버림(반응형x)-->
+            <table class="table table-hover">
+<!--text-nowrap = 줄바꿈을 하지 않겠다는 표시 이게 들어가면 화면 크기에 따라 스크롤이 생겨버림(반응형x)-->
               <thead>
                 <tr>
                   <th>ID</th>
@@ -231,36 +233,37 @@
           </div>
           <!-- /.card-body -->
         </div>
-        <!-- //콘텐츠내용 -->
+        <!-- //콘텐츠 내용 -->
         <!-- 페이징 처리 -->
-          <div class="col-12 text-right">
-            <button class="btn btn-primary">글쓰기</button>
-        <ul class="pagination justify-content-center">
-          <li class="paginate_button page-item previous disabled" id="example2_previous">
-            <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-          </li>
-          <li class="paginate_button page-item active">
-            <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-          </li>
-          <li class="paginate_button page-item ">
-            <a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0" class="page-link">2</a>
-          </li>
-          <li class="paginate_button page-item ">
-            <a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0" class="page-link">3</a>
-          </li>
-          <li class="paginate_button page-item ">
-            <a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0" class="page-link">4</a>
-          </li>
-          <li class="paginate_button page-item ">
-            <a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0" class="page-link">5</a>
-          </li>
-          <li class="paginate_button page-item ">
-            <a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">6</a>
-          </li>
-          <li class="paginate_button page-item next" id="example2_next"><a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-          </li>
-        </ul>
-      </div>
+        <div class="col-12 text-right">
+          <button class="btn btn-primary">글쓰기</button>
+          <ul class="pagination justify-content-center">
+              <li class="paginate_button page-item previous disabled" id="example2_previous">
+                <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+              </li>
+              <li class="paginate_button page-item active">
+                <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+              </li>
+              <li class="paginate_button page-item ">
+                <a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+              </li>
+              <li class="paginate_button page-item ">
+                <a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+              </li>
+              <li class="paginate_button page-item ">
+                <a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0" class="page-link">4</a>
+              </li>
+              <li class="paginate_button page-item ">
+                <a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+              </li>
+              <li class="paginate_button page-item ">
+                <a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">6</a>
+              </li>
+              <li class="paginate_button page-item next" id="example2_next">
+                <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+              </li>
+          </ul>
+        </div>
         <!-- //페이징 처리 -->
       </div><!-- /.container-fluid -->
     </section>
@@ -277,10 +280,10 @@
 
   <!-- Control Sidebar 오른쪽 바둑판베뉴클릭시 나오는 내용 -->
   <aside class="control-sidebar control-sidebar-dark">
-    <!-- demo.js에서 출력할 내용이 존재, demo.js사용안함. -->
+    <!-- demo.js에서 출력할 내용이 존재, demo.js사용않함. -->
     <div class="text-center mt-4">
     <h5>로그아웃</h5><hr class="mb-2"/>
-    <button type="button" class="btn btn-primary">로그아웃</button>
+    <button type="button" class="btn btn-primary" id="btn_logout">로그아웃</button>
     </div>
   </aside>
   <!-- /.control-sidebar -->
@@ -302,7 +305,7 @@
 <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App AdminLTE코어 -->
 <script src="dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes 오른쪽메뉴-로그아웃사용 코어 : 사용안함-->
+<!-- AdminLTE for demo purposes 오른쪽메뉴-로그아웃사용 코어: 사용안함. -->
 <!-- <script src="dist/js/demo.js"></script> -->
 </body>
 </html>
